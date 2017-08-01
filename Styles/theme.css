@@ -1595,9 +1595,6 @@ label.control-label.required:before,
 /* line 121, D:/5/22/s/Resources/Theme/ElectricBlueDesign/starter/theme.scss */
 
 .section-diagonal-right {
-    -webkit-transform: skew(0deg, 1.3deg);
-    -ms-transform: skew(0deg, 1.3deg);
-    transform: skew(0deg, 1.3deg);
     overflow: hidden;
     margin-top: 60px;
     margin-bottom: -20px;
