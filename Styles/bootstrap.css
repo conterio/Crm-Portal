@@ -4636,6 +4636,7 @@ tbody.collapse.in {
     position: relative;
     display: table;
     border-collapse: separate;
+    margin-left: -3px;
 }
 
 .input-group[class*="col-"] {
