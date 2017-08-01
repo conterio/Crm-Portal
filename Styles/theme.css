@@ -1498,6 +1498,11 @@ label.control-label.required:before,
 
 /* line 54, D:/5/22/s/Resources/Theme/ElectricBlueDesign/starter/theme.scss */
 
+.form-search {
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
 .page_section .form-search .btn {
     margin-top: 0;
 }
