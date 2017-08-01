@@ -1710,8 +1710,9 @@ label.control-label.required:before,
 
 .section-sub-landing {
     background-color: #EAAB00;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(homethumbnail1.jpg) no-repeat;
     //background: linear-gradient(transparent, #07aaf6), url("homethumbnail1.jpg") no-repeat center;
-    //background-size: cover; 
+    background-size: cover;
 }
 
 
