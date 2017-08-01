@@ -1,18 +1,21 @@
 {% assign forums_sm = sitemarkers["Forums"] %}
 
+
+{% editable snippets 'Head/Fonts'%}
 <section class="page_section section-landing">
   <div class="container">
     <div class="row ">
-      <div class="col-md-12">
-        <h1 class="section-landing-heading">{% editable snippets 'Home/Title' default: 'Contoso' %}</h1>
+      <div class="col-md-12">        
+        <h1 class="section-landing-heading">{% editable snippets 'Home/Title' default: 'Contoso' %}</h1>        
         <h2 class="section-landing-sub-heading">{% editable snippets 'Home/Subtitle' default: 'Customer' %}</h2>
         {% include 'Search' %}
       </div>
     </div>
   </div>
-  <div class="layer_down">&nbsp;</div>
+  
 </section>
 <section class="page_section section-knowledge">
+  <div class="layer_up">&nbsp;</div>
   <div class="container">
     <div class="content-home">
       <h2 class="blue_border">{% editable snippets "Home/MostPopularHeading" default: resx["Most_Popular"] %}</h2>
