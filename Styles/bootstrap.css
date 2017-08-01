@@ -4651,6 +4651,8 @@ tbody.collapse.in {
     float: left;
     width: 100%;
     margin-bottom: 0;
+    /*add some padding  between text and dropdown*/
+    padding-left: 10px;
 }
 
 .input-group .form-control:focus {
