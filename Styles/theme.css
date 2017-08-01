@@ -1661,6 +1661,7 @@ label.control-label.required:before,
 .section-landing {
     background: linear-gradient(transparent, transparent), url("homehero.jpg") no-repeat center;
     background-size: cover;
+    height: 900px;
 }
 
 
@@ -1675,7 +1676,7 @@ label.control-label.required:before,
 
 .section-landing .row>div .section-landing-heading {
     font-size: 8rem;
-    color: #000;
+    color: #fff;
     text-transform: uppercase;
 }
 
@@ -1693,7 +1694,7 @@ label.control-label.required:before,
     margin-top: 0;
     margin-bottom: 50px;
     font-size: 4.3rem;
-    color: #000;
+    color: #fff;
     letter-spacing: 19px;
     text-transform: uppercase;
 }
