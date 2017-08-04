@@ -1109,7 +1109,7 @@ footer .footer-bottom ul li a.active {
 .poll {
     height: 400px;
     background-color: #eeeeee;
-    border-top: 7px solid #0b80d0;
+    border-top: 7px solid #0d5c91;
     position: relative;
     padding-left: 15px;
     padding-right: 15px;
@@ -1437,7 +1437,7 @@ label.control-label.required:before,
 
 .blue_border {
     padding-bottom: 10px;
-    border-bottom: 7px solid #0b80d0;
+    border-bottom: 7px solid #0d5c91;
 }
 
 
@@ -1484,7 +1484,7 @@ label.control-label.required:before,
 /* line 45, D:/5/22/s/Resources/Theme/ElectricBlueDesign/starter/theme.scss */
 
 .page_section p {
-    border-top: solid #666666 1px;
+    //border-top: solid #666666 1px;
     padding-top: 5px;
 }
 
@@ -1862,7 +1862,7 @@ label.control-label.required:before,
 .sidebar-home {
     margin-top: 36px;
     background-color: #eeeeee;
-    border-top: 7px solid #0b80d0;
+    border-top: 7px solid #0d5c91;
     position: relative;
 }
 
