@@ -2026,13 +2026,12 @@ ol.tree {
     font-family: 'Helvetica', sans-serif;
 }
 
-//custom theme
-.left-radius {
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-}
-
 .right-radius {
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
+}
+
+button.left-radius {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
 }
