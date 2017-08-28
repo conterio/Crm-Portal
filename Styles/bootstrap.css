@@ -3690,6 +3690,8 @@ select[multiple].input-lg {
 }
 
 .btn {
+    padding: 5px;
+    border-radius: 5px;
     display: inline-block;
     margin-bottom: 0;
     font-weight: normal;
