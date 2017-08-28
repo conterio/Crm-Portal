@@ -1,6 +1,37 @@
+<footer class="container custom-footer">
+  <div class="row">
+    <small>
+      &copy; 2017 Wavetronix LLC
+      <a href="#">Careers</a>
+      <a href="#">Legal</a>
+      <a href="#">Manage</a>
+    </small>
+  </div>
+</footer>
+
+<!--
 {% assign knowledge_url = sitemarkers['Knowledge'].url %}
 {% assign createcase_url = sitemarkers['Create Case'].url %}
 {% assign contactus_url = sitemarkers['Contact Us'].url %}
+
+<section id="gethelp" class="page_section section-diagonal-right color-inverse {% if page %}{% unless page.parent %}home-section{% endunless %}{% endif %} hidden-print">
+  <div class="section-diagonal-right-content">
+    <div class="container">
+      <div class="row">
+        <h3  class="text-center">{% editable snippets "GetHelp/Heading" default: resx['Get_Help_DefaultText'] %}</h3>
+        <div class="col-sm-4 text-center">
+            <a href="{{ knowledge_url | escape }}" class="btn btn-info-home btn-lg-home" title="{{ snippets["knowledge/BrowseKb"]| default: resx['Browse_The_KB'] | escape }}" >{{ snippets["Knowledge/BrowseKb"] | default: resx['Browse_The_KB'] | escape }}</a>
+        </div>
+        <div class="col-sm-4 text-center">
+            <a href="{{ createcase_url | escape }}" class="btn btn-info-home btn-lg-home" title="{{ snippets["case/CreateCase"] | default: resx['Create_Case_DefaultText'] | escape }}">{{ snippets["Case/CreateCase"] | default: resx['Create_Case_DefaultText'] | escape }}</a>
+        </div>
+        <div class="col-sm-4 text-center">
+            <a href="{{ contactus_url | escape }}" class="btn btn-info-home btn-lg-home" title="{{ snippets["ContactUs"] | default: resx["Contact_Us"] | escape }}">{{ snippets["ContactUs"] | default: resx["Contact_Us"] | escape }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="gethelp" class="page_section section-diagonal-right color-inverse {% if page %}{% unless page.parent %}home-section{% endunless %}{% endif %} hidden-print">
   <div class="section-diagonal-right-content">
@@ -68,3 +99,4 @@
     </div>
   </div>
 </footer>
+-->
