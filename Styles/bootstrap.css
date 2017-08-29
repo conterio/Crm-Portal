@@ -3705,7 +3705,6 @@ select[multiple].input-lg {
     padding: 1 1;
     font-size: 16px;
     line-height: 1.4;
-    border-radius: 0;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
