@@ -5,7 +5,7 @@
   {% if created %}
   <div class='alert alert-block alert-success alert-case-created'><p>{% editable snippets 'CustomerService/Support/A_Case' type: 'text', default: resx['CustomerService_Support_A_Case'], escape: true %}{{ created | h  }}{% editable snippets 'CustomerService/Support/CaseCreated' type: 'text', default: resx['CustomerService_Support_Case_Created'], escape: true , tag: 'span' %}</p></div>
   {% endif %}
-  <div class="case-deflection">
+  {% comment %} <div class="case-deflection">
    <div class="content-panel panel panel-default">
     <div class="panel-heading">
      <h4><span aria-hidden="true" class="fa fa-search"></span> {% editable snippets 'CustomerService/Support/HelpQuestion' type: 'text', default: resx['CustomerService_Support_Help_Question'], escape: true , tag: 'span'%}</h4>
@@ -28,10 +28,10 @@
       <ul class="list-group" id="case-deflection-topics"></ul>
       <div class='panel-footer paging clearfix'>
         <button type="button" class="btn btn-default search-more pull-right"><span class='fa fa-plus'></span>
-{% editable snippets 'CustomerService/Support/ShowMore' type: 'text', default: resx['CustomerService_Support_ShowMore'], escape: true, tag: 'span' %}</button>
+          {% editable snippets 'CustomerService/Support/ShowMore' type: 'text', default: resx['CustomerService_Support_ShowMore'], escape: true, tag: 'span' %}</button>
       </div>
    </div>
-  </div>
+  </div> {% endcomment %}
   {% if user %}
     {% include 'entity_list' key:page.adx_entitylist.id %}
   {% else %}
