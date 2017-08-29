@@ -1,7 +1,6 @@
-{% extends 'Layout Custom Column' %}
+{% extends 'Layout 1 Column' %}
 
-{% block main %}
-  {% include 'page_copy' %}
+{% block main %}  
   {% assign created = request.params['created'] %}
   {% if created %}
   <div class='alert alert-block alert-success alert-case-created'><p>{% editable snippets 'CustomerService/Support/A_Case' type: 'text', default: resx['CustomerService_Support_A_Case'], escape: true %}{{ created | h  }}{% editable snippets 'CustomerService/Support/CaseCreated' type: 'text', default: resx['CustomerService_Support_Case_Created'], escape: true , tag: 'span' %}</p></div>
