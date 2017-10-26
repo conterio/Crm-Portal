@@ -1931,7 +1931,8 @@ label.control-label.required:before,
 
 .section-landing-search {
     min-height: 250px;
-    background: url(searchhero.jpg) no-repeat 0 25%;
+    //background: url(searchhero.jpg) no-repeat 0 25%;
+    background-color: black;
     background-size: cover;
 }
 
