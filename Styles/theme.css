@@ -203,7 +203,7 @@ a.homelink:hover {
     max-height: 510px;
     box-shadow: none;
     border-top: none;
-    padding-top: 8px;
+    //padding-top: 8px;
 }
 
 
@@ -334,7 +334,7 @@ a.homelink:hover {
 /* line 268, D:/5/22/s/Resources/Theme/ElectricBlueDesign/theme/bootstrap/theme.scss */
 
 .navbar-static-top .navbar-header {
-    padding-top: 8px;
+    //padding-top: 8px;
 }
 
 
