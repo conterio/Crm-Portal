@@ -1666,7 +1666,7 @@ label.control-label.required:before,
 .section-landing {
     background: linear-gradient(transparent, transparent), url("homehero.jpg") no-repeat center;
     background-size: cover;
-    height: 900px;
+    //height: 900px;
 }
 
 
