@@ -2056,7 +2056,7 @@ footer a {
 
 a {
     color: #54A5DB;
-    text-decoration: none;
+    text-decoration: none !important;
     font-size: 1rem;
     line-height: 1.188rem;
     cursor: pointer;
