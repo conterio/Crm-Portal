@@ -14,38 +14,19 @@
 {% assign createcase_url = sitemarkers['Create Case'].url %}
 {% assign contactus_url = sitemarkers['Contact Us'].url %}
 
-<section id="gethelp" class="page_section section-diagonal-right color-inverse {% if page %}{% unless page.parent %}home-section{% endunless %}{% endif %} hidden-print">
+<section id="gethelp" class="page_section section-diagonal-right color-inverse {% substitution %}{% if page %}{% unless page.parent %}home-section{% endunless %}{% endif %}{% endsubstitution %} hidden-print">
   <div class="section-diagonal-right-content">
     <div class="container">
       <div class="row">
-        <h3  class="text-center">{% editable snippets "GetHelp/Heading" default: resx['Get_Help_DefaultText'] %}</h3>
+        <h3 class="text-center">{% editable snippets "GetHelp/Heading" default: resx['Get_Help_DefaultText'] %}</h3>
         <div class="col-sm-4 text-center">
-            <a href="{{ knowledge_url | escape }}" class="btn btn-info-home btn-lg-home" title="{{ snippets["knowledge/BrowseKb"]| default: resx['Browse_The_KB'] | escape }}" >{{ snippets["Knowledge/BrowseKb"] | default: resx['Browse_The_KB'] | escape }}</a>
+          <a href="{{ knowledge_url | escape }}" class="btn btn-info-home btn-lg-home" title="{{ snippets["Knowledge/BrowseKb"] | default: resx['Browse_The_KB'] | escape }}">{{ snippets["Knowledge/BrowseKb"] | default: resx['Browse_The_KB'] | escape }}</a>
         </div>
         <div class="col-sm-4 text-center">
-            <a href="{{ createcase_url | escape }}" class="btn btn-info-home btn-lg-home" title="{{ snippets["case/CreateCase"] | default: resx['Create_Case_DefaultText'] | escape }}">{{ snippets["Case/CreateCase"] | default: resx['Create_Case_DefaultText'] | escape }}</a>
+          <a href="{{ createcase_url | escape }}" class="btn btn-info-home btn-lg-home" title="{{ snippets["Case/CreateCase"] | default: resx['Create_Case_DefaultText'] | escape }}">{{ snippets["Case/CreateCase"] | default: resx['Create_Case_DefaultText'] | escape }}</a>
         </div>
         <div class="col-sm-4 text-center">
-            <a href="{{ contactus_url | escape }}" class="btn btn-info-home btn-lg-home" title="{{ snippets["ContactUs"] | default: resx["Contact_Us"] | escape }}">{{ snippets["ContactUs"] | default: resx["Contact_Us"] | escape }}</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="gethelp" class="page_section section-diagonal-right color-inverse {% if page %}{% unless page.parent %}home-section{% endunless %}{% endif %} hidden-print">
-  <div class="section-diagonal-right-content">
-    <div class="container">
-      <div class="row">
-        <h3  class="text-center">{% editable snippets "GetHelp/Heading" default: resx['Get_Help_DefaultText'] %}</h3>
-        <div class="col-sm-4 text-center">
-            <a href="{{ knowledge_url | escape }}" class="btn btn-info-home btn-lg-home" title="{{ snippets["knowledge/BrowseKb"]| default: resx['Browse_The_KB'] | escape }}" >{{ snippets["Knowledge/BrowseKb"] | default: resx['Browse_The_KB'] | escape }}</a>
-        </div>
-        <div class="col-sm-4 text-center">
-            <a href="{{ createcase_url | escape }}" class="btn btn-info-home btn-lg-home" title="{{ snippets["case/CreateCase"] | default: resx['Create_Case_DefaultText'] | escape }}">{{ snippets["Case/CreateCase"] | default: resx['Create_Case_DefaultText'] | escape }}</a>
-        </div>
-        <div class="col-sm-4 text-center">
-            <a href="{{ contactus_url | escape }}" class="btn btn-info-home btn-lg-home" title="{{ snippets["ContactUs"] | default: resx["Contact_Us"] | escape }}">{{ snippets["ContactUs"] | default: resx["Contact_Us"] | escape }}</a>
+          <a href="{{ contactus_url | escape }}" class="btn btn-info-home btn-lg-home" title="{{ snippets["ContactUs"] | default: resx["Contact_Us"] | escape }}">{{ snippets["ContactUs"] | default: resx["Contact_Us"] | escape }}</a>
         </div>
       </div>
     </div>
@@ -85,7 +66,7 @@
                     {% if sublinks.size > 0 %}
                       {% for sublink in sublinks %}
                         <li>
-                          <a href="{{ sublink.url | escape }}">{{ sublink.name | default:sublink.title }}</a>
+                          <a href="{{ sublink.url | escape }}" {% if sublink.Open_In_New_Window %} target="_blank" {% endif %}>{{ sublink.name | default:sublink.title }}</a>
                         </li>
                       {% endfor %}
                     {% endif %}
