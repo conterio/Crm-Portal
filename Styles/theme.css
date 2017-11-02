@@ -190,10 +190,11 @@ a.homelink:hover {
 /* line 163, D:/5/22/s/Resources/Theme/ElectricBlueDesign/theme/bootstrap/theme.scss */
 
 .navbar-static-top.navbar {
-    height: 36px;
+    height: 28px;
     padding-bottom: 8px;
     padding-left: 8px;
     padding-right: 8px;
+    padding-top: 8px;
 }
 
 
@@ -334,7 +335,7 @@ a.homelink:hover {
 /* line 268, D:/5/22/s/Resources/Theme/ElectricBlueDesign/theme/bootstrap/theme.scss */
 
 .navbar-static-top .navbar-header {
-    padding-top: 7px;
+    padding-top: 0px;
 }
 
 

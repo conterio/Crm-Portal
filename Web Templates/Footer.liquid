@@ -1,3 +1,7 @@
+{% assign knowledge_url = sitemarkers['Knowledge'].url %}
+{% assign createcase_url = sitemarkers['Create Case'].url %}
+{% assign contactus_url = sitemarkers['Contact Us'].url %}
+
 <section id="gethelp" class="page_section section-diagonal-right color-inverse {% substitution %}{% if page %}{% unless page.parent %}home-section{% endunless %}{% endif %}{% endsubstitution %} hidden-print">
   <div class="section-diagonal-right-content">
     <div class="container">
@@ -29,9 +33,6 @@
 </footer>
 
 <!--
-{% assign knowledge_url = sitemarkers['Knowledge'].url %}
-{% assign createcase_url = sitemarkers['Create Case'].url %}
-{% assign contactus_url = sitemarkers['Contact Us'].url %}
 
 
 
