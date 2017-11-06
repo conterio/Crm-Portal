@@ -1664,7 +1664,8 @@ label.control-label.required:before,
 /* line 172, D:/5/22/s/Resources/Theme/ElectricBlueDesign/starter/theme.scss */
 
 .section-landing {
-    background: linear-gradient(transparent, transparent), url("homehero.jpg") no-repeat center;
+    /*background: linear-gradient(transparent, transparent), url("homehero.jpg") no-repeat center;*/
+    background: linear-gradient(transparent, transparent), url("https://d1upf2v1quehpe.cloudfront.net/attachments/495ce797f722b15e22346424c5284a8b8c1ce43e/store/e90b068306b99a84016db9533ccda072ca2ff9e1772247b3e1b881777a2f/freeway.jpg") no-repeat center;
     background-size: cover;
     //height: 900px;
 }
