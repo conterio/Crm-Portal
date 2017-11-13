@@ -35,7 +35,7 @@ h4.underline {
 .btn-info-home {
     /*color: #fff;*/
     /*border-color: #fff;*/
-    border: 1px solid transparent;
+    /*border: 1px solid transparent;*/
     /*background: transparent;*/
     background-color: #FFCA07;
     color: #333333;
@@ -340,7 +340,7 @@ a.homelink:hover {
 /* line 268, D:/5/22/s/Resources/Theme/ElectricBlueDesign/theme/bootstrap/theme.scss */
 
 .navbar-static-top .navbar-header {
-    padding-top: 7px;
+    /*padding-top: 7px;*/
 }
 
 
@@ -1812,8 +1812,8 @@ label.control-label.required:before,
     padding: 20px 0;
     font-size: 20px;
     background-color: transparent;
-    border: 0;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
 }
 
 
