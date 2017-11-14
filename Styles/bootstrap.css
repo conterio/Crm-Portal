@@ -20,6 +20,7 @@
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
+
 /******************************************
 ******************************************
 FONTS
@@ -27,28 +28,30 @@ FONTS
 ******************************************/
 
 @font-face {
-  font-family: "Klavika";
-  src: url("//com-wavetronix-assets.s3.amazonaws.com/fonts/KlavikaWebBasicLight.eot");
-  src: url("//com-wavetronix-assets.s3.amazonaws.com/fonts/KlavikaWebBasicLight.eot?#iefix") format("embedded-opentype"), url("//com-wavetronix-assets.s3.amazonaws.com/fonts/KlavikaWebBasicLight.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
+    font-family: "Klavika";
+    src: url("//com-wavetronix-assets.s3.amazonaws.com/fonts/KlavikaWebBasicLight.eot");
+    src: url("//com-wavetronix-assets.s3.amazonaws.com/fonts/KlavikaWebBasicLight.eot?#iefix") format("embedded-opentype"), url("//com-wavetronix-assets.s3.amazonaws.com/fonts/KlavikaWebBasicLight.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
 }
+
 @font-face {
-  font-family: "KlavikaMedium";
-  src: url("//com-wavetronix-assets.s3.amazonaws.com/fonts/KlavikaWebBasicMedium.eot");
-  src: url("//com-wavetronix-assets.s3.amazonaws.com/fonts/KlavikaWebBasicMedium.eot?#iefix") format("embedded-opentype"), url("//com-wavetronix-assets.s3.amazonaws.com/fonts/KlavikaWebBasicMedium.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
+    font-family: "KlavikaMedium";
+    src: url("//com-wavetronix-assets.s3.amazonaws.com/fonts/KlavikaWebBasicMedium.eot");
+    src: url("//com-wavetronix-assets.s3.amazonaws.com/fonts/KlavikaWebBasicMedium.eot?#iefix") format("embedded-opentype"), url("//com-wavetronix-assets.s3.amazonaws.com/fonts/KlavikaWebBasicMedium.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
 }
+
 @font-face {
-  font-family: "KlavikaDisplayExtraLight";
-  src: url("//com-wavetronix-assets.s3.amazonaws.com/fonts/KlavikaWebDisplayExtraLight.eot");
-  src: url("//com-wavetronix-assets.s3.amazonaws.com/fonts/KlavikaWebDisplayExtraLight.eot?#iefix") format("embedded-opentype"), url("//com-wavetronix-assets.s3.amazonaws.com/fonts/KlavikaWebDisplayExtraLight.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
+    font-family: "KlavikaDisplayExtraLight";
+    src: url("//com-wavetronix-assets.s3.amazonaws.com/fonts/KlavikaWebDisplayExtraLight.eot");
+    src: url("//com-wavetronix-assets.s3.amazonaws.com/fonts/KlavikaWebDisplayExtraLight.eot?#iefix") format("embedded-opentype"), url("//com-wavetronix-assets.s3.amazonaws.com/fonts/KlavikaWebDisplayExtraLight.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
 }
 
 html {
@@ -168,7 +171,6 @@ h6 {
     font-family: "proxima-nova", sans-serif !important;
     font-weight: 600;
 }
-
 
 h1 *,
 h2 *,
@@ -1833,13 +1835,15 @@ a.text-danger:focus {
 }
 
 .bg-primary {
-    color: #fff;
-    background-color: #2199e8;
+    color: #333;
+    /*background-color: #2199e8;*/
+    background-color: #FFCA07;
 }
 
 a.bg-primary:hover,
 a.bg-primary:focus {
-    background-color: #147dc2;
+    /*background-color: #147dc2;*/
+    background-color: lighten(#FFCA07, 15%);
 }
 
 .bg-success {
@@ -3760,7 +3764,7 @@ select[multiple].input-lg {
 }
 
 .btn {
-    padding: 5px;
+    padding: 4px 10px;
     border-radius: 5px;
     display: inline-block;
     margin-bottom: 0;
@@ -3771,7 +3775,7 @@ select[multiple].input-lg {
     touch-action: manipulation;
     cursor: pointer;
     background-image: none;
-    border: 1px solid transparent;
+    /*border: 1px solid transparent;*/
     white-space: nowrap;
     padding: 1 1;
     font-size: 16px;
@@ -3780,6 +3784,7 @@ select[multiple].input-lg {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    background-color: #FFCA07;
 }
 
 .btn:focus,
@@ -3797,6 +3802,7 @@ select[multiple].input-lg {
 .btn.focus {
     color: #333333;
     text-decoration: none;
+    background-color: lighten(#FFCA07, 15%);
 }
 
 .btn:active,
@@ -3888,30 +3894,35 @@ fieldset[disabled] .btn-default.focus {
 }
 
 .btn-primary {
-    color: #ffffff;
-    background-color: #2199e8;
-    border-color: #168cd9;
+    color: #333;
+    background-color: #FFCA07;
+    /*background-color: #2199e8;*/
+    /*border-color: #168cd9;*/
 }
 
 .btn-primary:focus,
 .btn-primary.focus {
-    color: #ffffff;
-    background-color: #147dc2;
-    border-color: #0b4165;
+    color: #333;
+    /*background-color: #147dc2;*/
+    background-color: lighten(#FFCA07, 15%);
+    /*border-color: #0b4165;*/
 }
 
 .btn-primary:hover {
-    color: #ffffff;
-    background-color: #147dc2;
-    border-color: #1168a2;
+    color: #333;
+    /*background-color: #147dc2;*/
+    background-color: #FFCA07;
+    /*border-color: #1168a2;*/
+    background-color: lighten(#FFCA07, 15%);
 }
 
 .btn-primary:active,
 .btn-primary.active,
 .open>.dropdown-toggle.btn-primary {
-    color: #ffffff;
-    background-color: #147dc2;
-    border-color: #1168a2;
+    color: #333;
+    /*background-color: #147dc2;*/
+    background-color: #FFCA07;
+    /*border-color: #1168a2;*/
 }
 
 .btn-primary:active:hover,
@@ -3923,9 +3934,10 @@ fieldset[disabled] .btn-default.focus {
 .btn-primary:active.focus,
 .btn-primary.active.focus,
 .open>.dropdown-toggle.btn-primary.focus {
-    color: #ffffff;
-    background-color: #1168a2;
-    border-color: #0b4165;
+    color: #333;
+    /*background-color: #1168a2;*/
+    background-color: #FFCA07;
+    /*border-color: #0b4165;*/
 }
 
 .btn-primary:active,
@@ -3943,13 +3955,15 @@ fieldset[disabled] .btn-primary:focus,
 .btn-primary.disabled.focus,
 .btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary.focus {
-    background-color: #2199e8;
-    border-color: #168cd9;
+    /*background-color: #2199e8;*/
+    /*border-color: #168cd9;*/
+    background-color: #FFCA07;
 }
 
 .btn-primary .badge {
-    color: #2199e8;
-    background-color: #ffffff;
+    /*color: #2199e8;*/
+    color: #FFCA07;
+    background-color: #333;
 }
 
 .btn-success {
@@ -4407,10 +4421,11 @@ tbody.collapse.in {
 .dropdown-menu>.active>a,
 .dropdown-menu>.active>a:hover,
 .dropdown-menu>.active>a:focus {
-    color: #ffffff;
+    color: #333;
     text-decoration: none;
     outline: 0;
-    background-color: #2199e8;
+    /*background-color: #2199e8;*/
+    background-color: #FFCA07;
 }
 
 .dropdown-menu>.disabled>a,
@@ -4931,7 +4946,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 .nav .open>a:hover,
 .nav .open>a:focus {
     background-color: #e6e6e6;
-    border-color: #2199e8;
+    /*border-color: #2199e8;*/
 }
 
 .nav .nav-divider {
@@ -5042,8 +5057,9 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 .nav-pills>li.active>a,
 .nav-pills>li.active>a:hover,
 .nav-pills>li.active>a:focus {
-    color: #ffffff;
-    background-color: #2199e8;
+    color: #333;
+    /*background-color: #2199e8;*/
+    background-color: #FFCA07;
 }
 
 .nav-stacked>li {
@@ -5151,6 +5167,8 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
     -webkit-overflow-scrolling: touch;
+    text-align: right;
+    /*background: #232222;*/
 }
 
 .navbar-collapse.in {
@@ -5166,7 +5184,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
     }
     .navbar-collapse.collapse {
         display: block !important;
-        //height: auto !important;
+        height: auto !important;
         padding-bottom: 0;
         overflow: visible !important;
     }
@@ -5950,12 +5968,15 @@ a.label:focus {
 }
 
 .label-primary {
-    background-color: #2199e8;
+    /*background-color: #2199e8;*/
+    background-color: #FFCA07;
+    color: #333;
 }
 
 .label-primary[href]:hover,
 .label-primary[href]:focus {
-    background-color: #147dc2;
+    /*background-color: #147dc2;*/
+    background-color: lighten(#FFCA07, 15%);
 }
 
 .label-success {
@@ -6404,7 +6425,8 @@ a.thumbnail.active {
     padding: 10px 15px;
     margin-bottom: -1px;
     background-color: #ffffff;
-    border: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
 }
 
 .list-group-item:first-child {
