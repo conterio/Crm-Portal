@@ -1,7 +1,18 @@
-{% extends 'layout 1 column' %}
 
-test
 {% block main %}
+  <div style="height: 300px; background: #54A5DB; margin: 0 0 24px; text-align: center; padding-top: 91px;">
+    <h1 style="color: white;">Knowledge Base</h1>
+    <section class="page_section section-landing-{{ current_page }} color-inverse">
+      <div class="container">
+        <div class="row ">
+          <div class="col-md-12 text-center">
+            {% include 'Search' %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
   {% include 'Page Copy' %}
   {% assign category_url = sitemarkers['Category'].url %}
   {% assign count = count | default: 0 %}
@@ -15,4 +26,5 @@ test
     {% endfor %}
     </div>
   {% endif %}
+  </div>
 {% endblock %}
