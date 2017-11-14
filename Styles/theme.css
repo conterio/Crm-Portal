@@ -7,7 +7,6 @@
 
 /* line 19, D:/5/22/s/Resources/Theme/ElectricBlueDesign/theme/bootstrap/theme.scss */
 
-
 h1.underline,
 h4.underline {
     border-bottom: 1px solid #bcbcbc;
@@ -35,7 +34,7 @@ h4.underline {
 .btn-info-home {
     /*color: #fff;*/
     /*border-color: #fff;*/
-    border: 1px solid transparent;
+    /*border: 1px solid transparent;*/
     /*background: transparent;*/
     background-color: #FFCA07;
     color: #333333;
@@ -196,11 +195,10 @@ a.homelink:hover {
 /* line 163, D:/5/22/s/Resources/Theme/ElectricBlueDesign/theme/bootstrap/theme.scss */
 
 .navbar-static-top.navbar {
-    height: 28px;
+    height: 36px;
     padding-bottom: 8px;
     padding-left: 8px;
     padding-right: 8px;
-    padding-top: 8px;
 }
 
 
@@ -341,7 +339,7 @@ a.homelink:hover {
 /* line 268, D:/5/22/s/Resources/Theme/ElectricBlueDesign/theme/bootstrap/theme.scss */
 
 .navbar-static-top .navbar-header {
-    padding-top: 0px;
+    /*padding-top: 7px;*/
 }
 
 
@@ -1813,8 +1811,8 @@ label.control-label.required:before,
     padding: 20px 0;
     font-size: 20px;
     background-color: transparent;
-    border: 0;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
 }
 
 
