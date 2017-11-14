@@ -2067,7 +2067,7 @@ footer a {
 
 /*this is for the search box to put a radius just on left side of button and match the hight of the input*/
 
-btn-left-side {
+.btn-left-side {
     height: 34px !important;
     border-radius: 5px 0px 0px 5px !important;
 }
@@ -2075,7 +2075,7 @@ btn-left-side {
 
 /*this is for the search box to put a radius just on right side of button and match the hight of the input*/
 
-btn-right-side {
+.btn-right-side {
     border-radius: 0px 5px 5px 0px !important;
     height: 34px !important;
 }
