@@ -13,7 +13,10 @@
       {% assign formId = uniqueid.new_guid %}
       <div class="btn-group btn-select input-group-btn" data-target="#filter-{{ formId }}" data-focus="#q">
         <li class="dropdown-submenu dropdown">
-          <button id="search-filter" type="button" class="btn btn-default left-radius" data-toggle="dropdown" aria-haspopup="true" aria-label="{{ searchFilterLabel }}" aria-expanded="false">
+          <button id="search-filter" type="button" class="btn btn-default btn-left-side"
+            data-toggle="dropdown"
+            aria-haspopup="true" aria-label="{{ searchFilterLabel }}" aria-expanded="false">
+
             <span class="selected">{{ defaultSearchFilterText }}</span>
             <span class="caret"></span>
           </button>
@@ -48,8 +51,10 @@
         value="{{ params.q | escape }}"
         title="{{ snippets["Header/Search/Label"] | default: resx["Search_DefaultText"] | h }}">
     <div class="input-group-btn">
-      <button type="submit" class="btn btn-default right-radius" title="{{ snippets["Header/Search/ToolTip"] | default: resx["Search_DefaultText"] | h }}" aria-label="{{ snippets["Header/Search/ToolTip"] | default: resx["Search_DefaultText"] | h }}">
-        <span class="fa fa-search" aria-hidden="true" style="top: 2px;"></span>
+      <button type="submit" class="btn btn-default btn-right-side"
+          title="{{ snippets["Header/Search/ToolTip"] | default: resx["Search_DefaultText"] | h }}"
+          aria-label="{{ snippets["Header/Search/ToolTip"] | default: resx["Search_DefaultText"] | h }}">
+        <span class="fa fa-search" aria-hidden="true"></span>
       </button>
     </div>
   </div>
