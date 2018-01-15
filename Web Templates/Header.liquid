@@ -142,10 +142,12 @@
                 </ul>
               </li>
             {% else %}
+              <!--Sign In-->
               <li>
-                <a href="{% if homeurl%}/{{ homeurl }}{% endif %}{{ website.sign_in_url_substitution }}">
+                <a href="https://login.microsoftonline.com/te/6aab740c-4e05-4fde-869e-77aa52e3158d/b2c_1_portaldevsiupin/oauth2/v2.0/authorize?client_id=49696b20-c66c-4278-bd56-11b4a4944a4c&redirect_uri=https%3A%2F%2Fwtxdev.microsoftcrmportals.com%2Fsignin-WtxIdDev&response_mode=form_post&response_type=code%20id_token&scope=openid&state=OpenIdConnect.AuthenticationProperties%3D1JMCdDEDuF0UuBvS_Lj6VcOvacZfVq5uBxf13Z2FX7bQGRv-PV3VRWtlxXszjhr0dEM6W5huw2vY9f4BQ7WXZQQaCxppmBS7XG7L29LBFmdfBHHwCO8vobCFo3AWAoV0oRsvCHRl9U90U2orVkxjY1cyVVMvKKQvid1fBUiEwOysFV3FUareMUXjZijK47eOpc--COFZLrv6tOWLkK4j91Yc1wvOcIqhk0hzLil4qRVN_4k8gQ_TdWdgV9uv0Bb37jWLr2W3e95aAN7PvGuR6KCOtIMSFdsxQKW7UJrCyQRxmFyOQ26QvmCECqtVOMHp1i454HPZmaWX7LnqN8755sUmUQH6TaG5HJKbukb1SmAuNiCDxc7LqKecXablAOSyjqi1RBECo8hxji-3iZF_OX4aTpefRkWkQcxTavBeuu7bxMZzbufxqkYY-uZKv3mKu3Me8JXESx7hBV29atCI0-rD363qs7pZ-JEmisTrkUbuxlnXlalIJo8NacjcwOgr&nonce=636512269881264442.YTNiNGFjYWQtN2MwYy00M2I3LWE2OTQtZjEzY2YzYmViNmY2YjY2NzA0OWMtMDI1MS00ODc4LWEwOWEtYTlhOGI3MWNiNzYx">Sign In!</a>
+                <!--<a href="{% if homeurl%}/{{ homeurl }}{% endif %}{{ website.sign_in_url_substitution }}">
                   {{ snippets["links/login"] | default:resx["Sign_In"] }}
-                </a>
+                </a>-->
               </li>
             {% endif %}
           </ul>
@@ -155,7 +157,7 @@
       <div class="navbar-right hidden-xs">
         {% editable snippets 'Navbar Right' type: 'html' %}
       </div>
-    </div>
+    </div><!--end primary navbar-->
   </div>
 </div>
 
