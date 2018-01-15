@@ -4318,6 +4318,7 @@ input[type="button"].btn-block {
 
 .collapse.in {
     display: block;
+    background: #232222;
 }
 
 tr.collapse.in {
