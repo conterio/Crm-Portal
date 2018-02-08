@@ -703,6 +703,13 @@ body {
     }
 }
 
+#search_sort_options {
+    background: none;
+    width: 200px;
+    border: 1px solid #B3B4B4;
+    height: 39px;
+}
+
 
 /* line 504, D:/5/22/s/Resources/Theme/ElectricBlueDesign/theme/bootstrap/theme.scss */
 
@@ -1401,6 +1408,24 @@ footer .footer-bottom ul li a.active {
     }
 }
 
+.btn-select .dropdown #search-filter {
+    border-radius: 5px 0 0 5px;
+    background: #E6E6E6;
+    border: 1px solid #e6e6e6;
+    padding: 5px 20px;
+}
+
+.input-group-btn .btn-right-side {
+    border-radius: 0 5px 5px 0;
+    background: #ffffff;
+    border: 0;
+    padding: 6px 20px;
+}
+
+#q {
+    border: 0;
+}
+
 
 /* line 1034, D:/5/22/s/Resources/Theme/ElectricBlueDesign/theme/bootstrap/theme.scss */
 
@@ -1467,13 +1492,6 @@ label.control-label.required:before,
 }
 
 
-/* line 31, D:/5/22/s/Resources/Theme/ElectricBlueDesign/starter/theme.scss */
-
-.page_section h1 {
-    font-size: 71px;
-}
-
-
 /* line 35, D:/5/22/s/Resources/Theme/ElectricBlueDesign/starter/theme.scss */
 
 .page_section h2 {
@@ -1528,7 +1546,7 @@ label.control-label.required:before,
 /* line 67, D:/5/22/s/Resources/Theme/ElectricBlueDesign/starter/theme.scss */
 
 .form-search .btn {
-    border: 1px solid #ccc;
+    border: 0;
 }
 
 
@@ -1557,6 +1575,16 @@ label.control-label.required:before,
 
 .dropdown-search.dropdown-menu>li:hover {
     background-color: transparent;
+}
+
+.dropdown-menu.dropdown-search {
+    width: 100vw;
+    background: #000000;
+    margin: auto;
+    left: 0;
+    top: 50px;
+    position: fixed;
+    padding: 20px 20vw;
 }
 
 
@@ -1676,7 +1704,7 @@ label.control-label.required:before,
     /*background: linear-gradient(transparent, transparent), url("homehero.jpg") no-repeat center;*/
     background: linear-gradient(transparent, transparent), url("https://d1upf2v1quehpe.cloudfront.net/assets/home/home-smarter-traffic-ea1ed62194e5c1d4a416d8826e0c131d20766bc83996e165bba24563a6eac9ad.png") no-repeat bottom;
     background-size: cover;
-    /*height: 900px;*/
+    height: 400px;
 }
 
 
@@ -2047,10 +2075,15 @@ button.left-radius {
     border-top-left-radius: 5px;
 }
 
+.section-landing-search.color-inverse {
+    background: #54A5DB;
+}
+
 .custom-footer {
     padding: 10px;
     margin-top: 30px;
     color: #4c4c4c;
+    border-top: 1px solid #4c4c4c;
 }
 
 footer a:first-child {
@@ -2062,20 +2095,4 @@ footer a {
     padding: 0px 1em;
     color: #4c4c4c;
     font-size: 1rem;
-}
-
-
-/*this is for the search box to put a radius just on left side of button and match the hight of the input*/
-
-.btn-left-side {
-    height: 34px !important;
-    border-radius: 5px 0px 0px 5px !important;
-}
-
-
-/*this is for the search box to put a radius just on right side of button and match the hight of the input*/
-
-.btn-right-side {
-    border-radius: 0px 5px 5px 0px !important;
-    height: 34px !important;
 }
