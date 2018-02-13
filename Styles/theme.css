@@ -1368,18 +1368,19 @@ footer .footer-bottom ul li a.active {
 /* line 1002, D:/5/22/s/Resources/Theme/ElectricBlueDesign/theme/bootstrap/theme.scss */
 
 #navbar .dropdown-menu {
-    margin-top: 8px;
+    width: 100%;
+    text-align: right;
 }
 
 
 /* line 1006, D:/5/22/s/Resources/Theme/ElectricBlueDesign/theme/bootstrap/theme.scss */
 
 #navbar .dropdown-search {
-    padding-top: 0;
-    background: transparent;
+    padding-top: 20px;
+    background: #000;
     border: 0;
     box-shadow: none;
-    margin: 9px;
+    margin: 0 0 9px 0;
 }
 
 
@@ -1525,12 +1526,14 @@ label.control-label.required:before,
 
 /* line 54, D:/5/22/s/Resources/Theme/ElectricBlueDesign/starter/theme.scss */
 
-.form-search {
-    //border: 2px solid white;
-    //border-radius: 4px;
-}
 
-.page_section .form-search .btn {
+/*.form-search {
+    border: 2px solid white;
+    border-radius: 4px;
+}*/
+
+.page_section .form-search .btn,
+.case-deflection .input-group .btn {
     margin-top: 0;
 }
 
@@ -1545,14 +1548,31 @@ label.control-label.required:before,
 
 /* line 67, D:/5/22/s/Resources/Theme/ElectricBlueDesign/starter/theme.scss */
 
-.form-search .btn {
+.form-search .btn,
+.case-deflection .input-group .btn,
+.case-deflection .input-group .form-control,
+.entitylist-search .btn {
     border: 0;
+    box-shadow: none;
+}
+
+.case-deflection .input-group,
+.entitylist-search {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.entitylist-search .form-control {
+    box-shadow: none;
+    border: 0;
+    border-radius: 5px;
 }
 
 
 /* line 70, D:/5/22/s/Resources/Theme/ElectricBlueDesign/starter/theme.scss */
 
-.form-search .btn-default:hover {
+.form-search .btn-default:hover,
+.case-deflection .input-group .btn-default:hover {
     border-color: #ccc;
 }
 
@@ -1836,11 +1856,10 @@ label.control-label.required:before,
 /* line 261, D:/5/22/s/Resources/Theme/ElectricBlueDesign/starter/theme.scss */
 
 .content-home .list-group-item {
-    padding: 20px 0;
+    padding: 0 60px 30px 0;
     font-size: 20px;
     background-color: transparent;
-    border-top: 1px solid #dddddd;
-    border-bottom: 1px solid #dddddd;
+    vertical-align: top;
 }
 
 
@@ -1882,8 +1901,10 @@ label.control-label.required:before,
 /* line 290, D:/5/22/s/Resources/Theme/ElectricBlueDesign/starter/theme.scss */
 
 .content-home .title {
-    font-size: 24px;
+    font-size: 22px;
     font-family: proxima-nova, "Segoe UI Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    line-height: 26px;
 }
 
 
@@ -2095,4 +2116,104 @@ footer a {
     padding: 0px 1em;
     color: #4c4c4c;
     font-size: 1rem;
+}
+
+footer a:hover {
+    border-left: 1px solid #4c4c4c;
+    padding: 0px 1em;
+    color: #54A5DB;
+    font-size: 1rem;
+}
+
+.xrm-attribute-value h1 {
+    color: #fefefe;
+    font-size: 84px;
+    font-weight: 500;
+}
+
+.section-landing h1 {
+    font-size: 75px;
+    color: white;
+    margin-top: 100px;
+}
+
+.section-landing .xrm-attribute-value {
+    font-size: 32px;
+    text-transform: capitalize;
+    color: #FFCA07;
+}
+
+.case-deflection .search-apply {
+    border: 1px solid #c9c9c9;
+    border-left: 1px solid transparent;
+}
+
+.case-deflection .form-control {
+    border: 1px solid #c9c9c9;
+}
+
+.tech-support-blurb {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto 50px auto;
+}
+
+.kb-keywords {
+    font-size: 16px;
+    font-weight: 200;
+    color: #999;
+    margin-bottom: 0;
+}
+
+.kb-clip-title {
+    font-size: 1.375rem;
+    font-family: "proxima-nova", sans-serif !important;
+    font-style: normal;
+    margin-top: 0;
+    color: #4c4c4c;
+}
+
+.kb-article-clip {
+    width: 49%;
+    display: inline-block;
+}
+
+.read-more-wrap {
+    list-style-type: none;
+}
+
+.read-more-state {
+    display: none;
+}
+
+.read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+}
+
+.read-more-state:checked~.read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+}
+
+.read-more-state~.read-more-trigger:before {
+    content: 'View more';
+}
+
+.read-more-state:checked~.read-more-trigger:before {
+    content: 'View less';
+}
+
+.read-more-trigger {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 .5em;
+    color: #666;
+    font-size: .9em;
+    line-height: 2;
+    border: 1px solid #ddd;
+    border-radius: .25em;
 }
