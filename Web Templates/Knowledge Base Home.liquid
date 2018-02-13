@@ -1,43 +1,75 @@
 
 {% block main %}
-  <div style="height: 300px; background: #54A5DB; margin: 0 0 24px; text-align: center; padding-top: 91px;">
-    <h1 style="color: white;">Knowledge Base</h1>
-    <section class="page_section section-landing-{{ current_page }} color-inverse">
-      <div class="container">
-        <div class="row ">
-          <div class="col-md-12 text-center">
-            {% include 'Search' %}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-  {% include 'Page Copy' %}
-  {% assign category_url = sitemarkers['Category'].url %}
-  {% assign count = count | default: 0 %}
-  {% assign categories = knowledge.categories | top_level: count %}
-  {% assign popular_articles = knowledge.articles \| top: 100, en-US %}
+{% fetchxml test_query %}
+<fetch >
+  <entity name="knowledgearticle" >
+    <attribute name="title" />
+    <attribute name="articlepublicnumber" />
+    <order attribute="title" />
+    <link-entity name="knowledgearticlescategories" from="knowledgearticleid" to="knowledgearticleid" intersect="true" >
+      <link-entity name="category" from="categoryid" to="categoryid" >
+        <attribute name="title" alias="cattitle" />
+        <attribute name="categorynumber" alias="catnum" />
+        <order attribute="title" />
+      </link-entity>
+    </link-entity>
+  </entity>
+</fetch>
+{% endfetchxml %}
+{% assign obj = test_query.results.entities %}
+
+<div style="height: 300px; background: #54A5DB; margin: 0 0 24px; text-align: center; padding-top: 91px;">
+<h1 style="color: white;">Knowledge Base</h1>
+<section class="page_section section-landing-{{ current_page }} color-inverse">
+<div class="container">
+<div class="row ">
+<div class="col-md-12 text-center">
+{% include 'Search' %}
+
+
+<div class="container">
+    {% include 'Page Copy' %}
+    {% assign category_url = sitemarkers['Category'].url %}      
+    {% assign post = 0 %}    
+    <div>
     
-  {% if categories %}
-    <div class="list-group unstyled">
-    {% for category in categories %}
-      {% assign ct = category.title | downcase %}
-      <a href="{{ category_url | add_query: 'id', category.categorynumber }}" class="list-group-item">
-        {{ category.title }}        
-      </a>
-      {% if popular_articles %}
-        <div class="list-group">
-        {% for article in popular_articles %}
-          {% assign ak = article.keywords | downcase %}
-          {% if ct contains ak %}
-            {{article.title}}          
+    
+      {% for category in obj %}
+        {{ category.cattitle }}
+        <div>
+          <input type="checkbox" class="read-more-state" id="post-{{post}}" />
+          {% assign count = 0 %}
+          <ul class="read-more-wrap">
+            
+            
+            {% for item in obj %}            
+              {% if item.cattitle contains category.cattitle %}
+                {% if count < 3 %}
+                  <li><a href="/knowledgebase/article/{{item.articlepublicnumber}}">{{ item.title }}</a></li>
+                {% else %}
+                  <li class="read-more-target"><a href="/knowledgebase/article/{{item.articlepublicnumber}}">{{ item.title }}</a></li>          
+                {% endif %}
+                {% assign count = count | plus: 1 %}
+              {% endif %}            
+            {% endfor %}
+            
+            
+          </ul>
+          {% if count > 3 %}
+            <label for="post-{{post}}" class="read-more-trigger"></label>
           {% endif %}
-        {% endfor %}
+          {% assign count = 0 %}
+          
+          
         </div>
-      {% endif %}
-    {% endfor %}
+        <br/>
+        <br/>
+        {% assign post = post | plus: 1 %}
+      {% endfor %}
+      <br/>
+      <br/>
+      
     </div>
-  {% endif %}
-  </div>
+
+</div>
 {% endblock %}
