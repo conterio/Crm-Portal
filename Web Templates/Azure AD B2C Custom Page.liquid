@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+      {{ page.title | h }}
+    </title>
+    <link href="{{ request.url | base }}/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ request.url | base }}/theme.css" rel="stylesheet">
+    <style>
+        @font-face { 
+            font-family: 'KlavikaDisplay';
+            src: local(Klavika), url('https://com-wavetronix-assets.s3.amazonaws.com/fonts/KlavikaWebBasicLight.woff');
+        } 
+        body, html {
+            margin: 0;
+            padding: 0;
+            background: #4c4c4c;
+            text-align: center;
+            font-family: KlavikaDisplay, Verdana, Geneva, Tahoma, sans-serif;
+        }
+        label {
+            text-align: left;
+            display: block;
+        }
+        .password-label {
+            text-align: left;
+        }
+        .password-label label {
+            display: inline-block;
+        }
+        .entry-item {
+            margin: 20px 0;
+        }
+        a {
+        color: #54A5DB;
+        text-decoration: none;
+        margin-left: 5px;
+        font-family: KlavikaDisplay, Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        }
+        .forgotPassword {
+            font-size: 12px;
+        }
+        input {
+            width: 100%;
+            margin: 5px 0 0 0;
+            padding: 5px;
+            background-color: #ffffff !important;
+            border: 1px solid rgb(202, 202, 202);
+            border-radius: 5px;
+        }
+        h2 {
+            font-weight: normal;
+        }
+        .divider {
+            display: none;
+        }
+        .entry, .create {
+            width: calc(100% - 20px);
+
+        }
+        .buttons {
+            text-align: left;
+        }
+        button {
+            padding: 10px 30px;
+            border-radius: 5px;
+            border: 1px solid transparent;
+            background-color: #FFCA07;
+            cursor: pointer !important;
+        }
+        button:hover {
+            background-color: #EAAB00;
+        }
+        #logonIdentifier {
+            background-color: #fff;
+        }
+        path, polygon, rect {
+            fill: #ffffff;
+        }
+        li {
+            list-style-type: none;
+        }
+        ul {
+            padding: 0;
+        }
+        .verificationInfoText {
+            font-size: 12px;
+        }
+        .error {
+            text-align: left;
+            font-size: 10px;
+        }
+        .error p {
+            margin: 0;
+        }
+        .helpLink.tiny {
+            font-size: 10px;
+            display: block;
+            text-align: left;
+            margin: 5px 0 20px 0;
+        }
+        button[disabled=disabled]{
+            background-color: #B3B4B4 !important;
+        }
+        #email_ver_but_send {
+            margin-bottom: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <div style="width: 40px; height: 40px; margin: 30px auto 0 auto;">
+        <img src="https://d1upf2v1quehpe.cloudfront.net/assets/icons/wavetronix-icon-f44afc21164820a479c97ce37b73ad0751eb5ed1932fbb5ad8693d76c8066d75.svg" alt="wavetronix" height="40px" width="40px">
+    </div>
+     <div class="row">
+      <div style="background: #e6e6e6; border-radius: 5px; padding: 20px; width: 70vw; margin: 30px auto; max-width: 500px;">
+        {% include 'Page Copy' %}
+        <div id="api"></div>
+      </div>
+     </div>
+    </div>
+  </body>
+</html>
